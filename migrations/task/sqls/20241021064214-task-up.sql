@@ -159,7 +159,7 @@ INSERT INTO "COURSE"( user_id, skill_id, name, start_at, end_at, max_participant
 VALUES
 ( 
  (select id from "USER" where email = 'lee2000@hexschooltest.io'),
- (select id from "SKILL" where name = '復健訓練'),
+ (select id from "SKILL" where name = '重訓'),
  '重訓基礎課',
  '2024-11-25 14:00:00',
  '2024-11-25 16:00:00',
