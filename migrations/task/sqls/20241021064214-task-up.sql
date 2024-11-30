@@ -238,7 +238,7 @@ GROUP BY user_id;
 
 -- 5-7. 查詢：計算用戶王小明的已使用堂數，顯示須包含以下欄位： user_id , total。 (需使用到 Count 函式與 Group By)
 SELECT user_id, COUNT(*) AS  total 
-FROM course_booking
+FROM "COURSE_BOOKING"
 WHERE user_id = (SELECT id FROM "user" WHERE email = 'wXlTq@hexschooltest.io')
 AND status != '課程已取消'
 GROUP BY user_id;
